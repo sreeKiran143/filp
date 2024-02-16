@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .parent{
+        display: flex;
+    }
+    .div{
+        height:200px;
+        width: 300px;
+        /* border: 3px groove red; */
+        border-radius: 100%;
+        margin: 2px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .image{
+        border-radius: 100%;
+        height:150px;
+        margin-top: 20px;
+        animation-name: facebook;
+        animation-duration:2s ;
+        animation-iteration-count: 10;
+
+
+    }
+    @keyframes facebook{
+        from{
+           margin-top: 0px;
+           margin-left: 0px;
+            transform: rotatey(0deg); 
+        }
+        to{
+            margin-top:10px;
+            margin-left: 10px;
+             transform: rotatey(360deg); 
+        }
+    }
+    
+#div1{
+    animation: bounce 2s 5 ;
+    animation-direction: reverse;
+}
+@keyframes bounce {
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+}
+#div2{
+    animation: bounce 2s 5 ;
+}
+@keyframes bounce {
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+
+    }
+    to{
+        margin-top: 200px;
+        margin-left:-20px;
+    }
+}
+#div3{
+    animation: bounce 2s 5;
+    animation-direction:alternate-reverse;
+
+}
+@keyframes bounce {
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+        
+    }
+    to{
+        margin-top: 200px;
+        margin-left:-20px;
+    }
+}
+#div4{
+    animation: bounce 2s 5;
+    /* animation-delay: 5s; */
+    animation-direction: alternate;
+
+}
+@keyframes bounce {
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+        
+    }
+    to{
+        margin-top: 200px;
+        margin-left:80px;
+    }
+}
+#div5{
+    animation: bounce 2s infinite ;
+    /* animation-delay:6s; */
+    animation-direction: reverse;
+}
+@keyframes bounce {
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+        
+    }
+    to{
+        margin-top: 200px;
+        margin-left:-10px;
+    }
+}
+
+   .div .image:hover{
+       height: 120px;
+       transition: 2sec;
+     transform:rotate(360deg)
+    
+    }
+    #im1{ 
+        height: 40px;
+    }
+    #im2{
+        height: 40px;
+    }
+    #im3{
+        height: 40px;
+    }
+    #im4{
+        height: 40px;
+    }
+    #im5{
+        height: 40px;
+    }
+    
+    </style>
+</head>
+<body>
+<center>
+    <div class="parent">
+    <div id="div1" class="div">
+    <a href="https://www.facebook.com"><img id="im1" class="image" src="./Facebook.png" alt="" height="200px"></a>
+     </div>
+     <div id="div2" class="div">
+    <a href="https://www.youtube.com"><img id="im2" class="image" src="./youtube.avif" alt="" height="200px"></a>
+    </div>
+    <div id="div3" class="div">
+    <a href="https://instagram.com"><img id="im3" class="image" src="./insta.jpg" alt="" height="200px"></a>
+    </div>
+    <div id="div4" class="div">
+    <a href="https://twitter.com"><img id="im4" class="image" src="./twitter.jpg" alt="" height="200px"></a>
+    </div>
+    <div id="div5" class="div">
+    <a href="https://whatsapp.com"><img id="im5" class="image" src="./WhatsApp_icon.png.webp" alt="" height="200px"></a>
+    </div>
+    </div>
+
+
+
+
+
+
+ </center>
+</body>
+</html>
